@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://wwww.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>ABZ Hardware Shop | News</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>News ID</th>
+        <th>News Title</th>
+        <th>News Description</th>
+    </tr>
+    <tr th:each="newsItem:${news}">
+        <td th:text="${newsItem.id}">Id</td>
+        <td th:text="${newsItem.title}">Title</td>
+        <td th:text="${newsItem.desc}">Desc</td>
+    </tr>
+</table>
+</body>
+</html>
